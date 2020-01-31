@@ -1,0 +1,4 @@
+##django-import-export
+openpyxl==2.5.1#how-to-upload-and-process-the-excel-file-in-django/
+django-excel#django.pyexcel
+pyexcel-xls#http://django.pyexcel.org/en/latest/#file-format-list#django.pyexcel

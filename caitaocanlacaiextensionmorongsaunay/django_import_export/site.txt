@@ -1,0 +1,3 @@
+## https://django-import-export.readthedocs.io/en/latest/getting_started.html#base-modelresource
+https://www.pythoncircle.com/post/591/how-to-upload-and-process-the-excel-file-in-django/
+http://django.pyexcel.org/en/latest/

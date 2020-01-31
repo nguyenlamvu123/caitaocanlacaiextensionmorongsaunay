@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time right now is: </title>
+</head>
+<body>
+<form method="POST">
+  <label>Tên này:</label>
+  <input id="first" type="text"/>
+  <br/>
+  <label>Thích thì thêm ô nữa:</label>
+  <input id="second" type="text"/>
+  <br/>
+  <input type="button" id="clickme" value="Gửi"/>
+</form>
+
+<div id="result"></div>
+<script>
+document.getElementById("clickme").onclick = function() {
+	var firstInput = document.getElementById("first").value;
+	var secondInput = document.getElementById("second").value;
+  var showResultDiv = document.getElementById("result");
+  
+  var content = "<p>" + firstInput + "</p>" +
+  							"<p>" + secondInput + "</p>";
+                
+	showResultDiv.innerHTML = content;
+}
+</script>
+
+<!-- Code provided by Google -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+</body>
+</html>

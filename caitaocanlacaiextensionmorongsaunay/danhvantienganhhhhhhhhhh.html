@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>   
+    </head>
+<body>
+<input id="inputtext" type="text" value="Nhập giá trị">
+<p id="giatriinputtext"></p>
+
+<script>
+    //Hàm đọc giá trị và hiện thị thông tin
+    function textthaydoi() {
+        var value = $( this ).val();
+        $( "p#giatriinputtext" ).text( value );
+    }
+
+    //Bắt sự kiện keyup của textbox
+    $( "#inputtext" ).keyup(textthaydoi);
+
+    //Cho #inputext phát sinh một sự kiện keyup ban đầu
+    $( "#inputtext" ).keyup();
+
+</script>
+
+<!-- Code provided by Google -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+<!-- Use CSS to replace link text with flag icons -->
+<form method="POST">
+    <label>Tên này:</label>
+    <input id="first" type="text" />
+    <br/>
+    <label>Thích thì thêm ô nữa:</label>
+    <input id="second" type="text" />
+    <br/>
+    <input type="button" id="clickme" value="Gửi" />  
+
+<!-- Code provided by Google -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+
+<!-- Flag click handler -->
+<script type="text/javascript">
+    $('.translation-links a').click(function() {
+        var lang = $(this).data('lang');
+        var $frame = $('.goog-te-menu-frame:first');
+        if (!$frame.size()) {
+            alert("Error: Could not find Google translate frame.");
+            return false;
+        }
+        $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+        return false;
+    });
+</script>

@@ -1,0 +1,35 @@
+﻿<!--{% if idols %}
+ <ul>
+   {% for idol in idols%}
+     <li>{{ idol.name}}</li  {% endfor %}
+ </ul>
+{% else %}
+ <p>there is no idol in databasssssse</p>
+{% endif %}-->
+
+<!--{% extends 'layouts/main.html' %}-->
+{% load static %}
+<!--<img src="{% static "img/top-banner-blue.gif" %}">-->
+{% block title %}
+ List Idols
+{% endblock %}
+{% block content %}
+ <h1>Danh sách thần tượng</h1>
+
+<form action="" method="get" class="form-horizontal">
+ {% csrf_token %}
+ <table>
+   {{ form.as_table }}
+ </table>
+ <input type="submit" value="Search" />
+</form>
+
+{% if idols %}
+ <ul>
+   {% for idol in idols%}
+     <li>{{ idol.name}}</li  {% endfor %}
+ </ul>
+{% else %}
+ <p>there is no idol in databasssssse</p>
+{% endif %}
+{% endblock %}
